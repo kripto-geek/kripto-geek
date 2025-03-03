@@ -1,4 +1,4 @@
-![Header](https://capsule-render.vercel.app/api?type=rect&color=232323&height=80&section=header&text=Kripto%20Geek%20⚙️&fontColor=00ffaa&fontSize=28&fontAlign=50)
+![Header](https://capsule-render.vercel.app/api?type=rect&color=232323&height=80&section=header&text=Kripto%20Geek%20⚙️&fontColor=ffae00&fontSize=28&fontAlign=50)
 
 ```sh
 $ whoami
