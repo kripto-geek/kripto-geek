@@ -46,7 +46,6 @@ todo-eth               # Blockchain-based To-Do app
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=kripto-geek&show_icons=true&theme=onedark&hide_border=true" width="49%" />
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=kripto-geek&theme=onedark" width="49%" />
 </p>
 
 <p align="center">
