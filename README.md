@@ -1,59 +1,68 @@
-<h1 align="center">
-  Kripto Geek: Code & Conquer 🚀
-</h1>
+![Header](https://capsule-render.vercel.app/api?type=rect&color=0f0f0f&height=100&section=header&text=Kripto%20Geek%20🚀&fontColor=00ff00&fontSize=30&fontAlign=50)
 
-<div align="center">
-  <!-- Dynamic typing effect showcasing your tech interests -->
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=F7DF1E&width=435&lines=DevOps+|+Cybersecurity+|+Linux+Shell" alt="Kripto Geek Interests" />
-</div>
-
----
-
-## About Me
-Hey there! I'm **Kripto Geek** (kr. Gaurav) – a student with an insatiable curiosity for all things tech. I'm diving deep into **DevOps**, exploring the world of **Cybersecurity**, and mastering the art of **Linux Shell** wizardry. I build projects not just to solve problems, but to have fun and push creative boundaries.
-
----
-
-## 🚀 Projects & Creations
-
-### 🔐 Cybersecurity & Shell Scripts
-- **servercapture-cors**  
-  Overcoming cross-origin challenges with creative solutions.
-- **TH-git-j-script**  
-  A nifty Python script to automate git tasks right from the Linux shell.
-
-### 🌐 DevOps & API Magic
-- **graphql-cors**  
-  Experimenting with GraphQL and flexible CORS configurations.
-- **mysql-go-api**  
-  Building robust back-end APIs using Go and MySQL.
-
-### 🔗 Blockchain & dApps
-- **todo-eth**  
-  A playful dApp exploring Ethereum smart contracts.
-- **herro**  
-  A friendly Python project with a twist.
-
----
-
-## 🧰 Tech Stack & Interests
-
-<div align="center">
-  [![DevOps Enthusiast](https://img.shields.io/badge/DevOps-Enthusiast-4CAF50?style=flat-square)](https://github.com/kripto-geek)
-  [![Cybersecurity](https://img.shields.io/badge/Cybersecurity-Passionate-ff69b4?style=flat-square)](https://github.com/kripto-geek)
-  [![Linux Shell](https://img.shields.io/badge/Linux-Shell-FCC624?style=flat-square)](https://github.com/kripto-geek)
-</div>
-
-- **Operating Systems:** Linux (Bash, Zsh, Shell Scripting)  
-- **DevOps Tools:** Docker, Kubernetes, CI/CD pipelines  
-- **Programming:** Python, Go, Solidity, JavaScript  
-- **Cybersecurity:** Ethical hacking, penetration testing, security audits  
-
----
-
-## ⏳ My Journey in a Nutshell
 ```bash
-# 2019: Began with Linux Shell scripting and open-source contributions.
-# 2020: Delved into cybersecurity & ethical hacking.
-# 2021: Embraced DevOps—containerization & cloud automation.
-# 2022: Expanded into blockchain, smart contracts, and dApps.
+# WhoAmI
+kripto_geek="A student, DevOps explorer, Cybersecurity enthusiast & Linux tinkerer."
+```
+
+> **Exploring the intersection of automation, security, and decentralized tech.**
+
+---
+
+## 🛠️ Toolbox
+
+```python
+tech_stack = {
+    "DevOps": ["Docker", "Kubernetes", "Terraform", "CI/CD"],
+    "Security": ["Penetration Testing", "CTFs", "Threat Modeling"],
+    "Languages": ["Python", "Go", "Solidity", "Shell Scripting"],
+    "OS & Tools": ["Linux", "Bash", "Zsh", "Vim", "Tmux"]
+}
+```
+
+![Languages](https://skillicons.dev/icons?i=linux,docker,kubernetes,python,go,bash,github,git,aws)
+
+---
+
+## 🔥 Featured Projects
+
+| 🚀 Project | 📝 Description |
+|------------|---------------|
+| [**servercapture-cors**](https://github.com/kripto-geek/servercapture-cors) | Overcoming cross-origin challenges. |
+| [**TH-git-j-script**](https://github.com/kripto-geek/TH-git-j-script) | Automating Git operations via Linux shell. |
+| [**graphql-cors**](https://github.com/kripto-geek/graphql-cors) | Secure GraphQL setup with CORS. |
+| [**mysql-go-api**](https://github.com/kripto-geek/mysql-go-api) | API development using Go & MySQL. |
+| [**todo-eth**](https://github.com/kripto-geek/todo-eth) | A blockchain-based To-Do dApp. |
+
+---
+
+## 📊 Stats & Activity
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=kripto-geek&show_icons=true&theme=tokyonight&hide_border=true" width="49%" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=kripto-geek&theme=tokyonight&hide_border=true" width="49%" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=kripto-geek&theme=tokyonight" width="100%" />
+</p>
+
+---
+
+## 📡 Connect with Me
+
+```json
+{
+    "Portfolio": "https://kripto-geek.github.io",
+    "GitHub": "https://github.com/kripto-geek"
+}
+```
+
+<p align="center">
+  <a href="https://github.com/kripto-geek"><img src="https://img.shields.io/badge/GitHub-kripto--geek-181717?style=for-the-badge&logo=github"></a>
+  <a href="https://kripto-geek.github.io"><img src="https://img.shields.io/badge/Portfolio-kripto--geek.github.io-blue?style=for-the-badge"></a>
+</p>
+
+---
+
+**"Keep hacking, keep building, keep learning."**
