@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="320" viewBox="0 0 1000 320">
+  <defs>
+    <linearGradient id="topline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.5" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#00ff9c"/>
+    </linearGradient>
+    <linearGradient id="titleg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7ff7d1"/>
+      <stop offset="0.5" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#ffffff" stop-opacity="0.13"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1.4" fill="#ffffff" opacity="0.045"/>
+    </pattern>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="dotglow" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="rv1"><rect x="60" y="196" width="0" height="22" class="r1"/></clipPath>
+    <clipPath id="rv2"><rect x="60" y="226" width="0" height="22" class="r2"/></clipPath>
+    <clipPath id="rv3"><rect x="60" y="256" width="0" height="22" class="r3"/></clipPath>
+    <clipPath id="panel"><rect x="1" y="1" width="998" height="318" rx="16"/></clipPath>
+  </defs>
+
+  <style>
+    text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "DejaVu Sans Mono", monospace; }
+    .r1, .r2, .r3 { fill: #000; }
+    @keyframes grow { from { width: 0 } to { width: 460 } }
+    .r1 { animation: grow 0.9s 0.4s ease-out forwards; }
+    .r2 { animation: grow 0.9s 1.5s ease-out forwards; }
+    .r3 { animation: grow 0.9s 2.6s ease-out forwards; }
+
+    @keyframes blink { 50% { opacity: 0 } }
+    .cursor { animation: blink 1s steps(1) 3.8s infinite; }
+
+    @keyframes sheenMove { 0% { transform: translateX(-300px) } 100% { transform: translateX(1060px) } }
+    .sheen { animation: sheenMove 6.5s 1s ease-in-out infinite; }
+
+    @keyframes sweep { to { transform: rotate(360deg) } }
+    .sweep { transform-origin: 904px 84px; animation: sweep 5s linear infinite; }
+
+    @keyframes pulse { 0%, 100% { opacity: 0.25 } 50% { opacity: 1 } }
+    .pulse { animation: pulse 2s ease-in-out infinite; }
+
+    @keyframes wave { 0%, 100% { opacity: 0.15 } 50% { opacity: 0.9 } }
+    .b1 { animation: wave 1.8s 0.0s ease-in-out infinite; }
+    .b2 { animation: wave 1.8s 0.2s ease-in-out infinite; }
+    .b3 { animation: wave 1.8s 0.4s ease-in-out infinite; }
+    .b4 { animation: wave 1.8s 0.6s ease-in-out infinite; }
+    .b5 { animation: wave 1.8s 0.8s ease-in-out infinite; }
+    .b6 { animation: wave 1.8s 1.0s ease-in-out infinite; }
+    .b7 { animation: wave 1.8s 1.2s ease-in-out infinite; }
+    .b8 { animation: wave 1.8s 1.4s ease-in-out infinite; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .r1, .r2, .r3 { animation: none; width: 460; }
+      .cursor, .pulse, .b2, .b3, .b4, .b5, .b6, .b7, .b8 { animation: none; }
+      .sheen { animation: none; display: none; }
+      .sweep { animation: none; }
+      .b1 { animation: none; opacity: 0.5; }
+    }
+  </style>
+
+  <!-- screen -->
+  <rect x="1" y="1" width="998" height="318" rx="16" fill="#0b0f14" stroke="#1f2937"/>
+  <rect x="10" y="1" width="980" height="3" fill="url(#topline)"/>
+
+  <!-- grad cover: traffic lights + moving sheen + scanlines -->
+  <g clip-path="url(#panel)">
+    <circle cx="72" cy="52" r="5.5" fill="#28c840"/>
+    <circle cx="54" cy="52" r="5.5" fill="#febc2e"/>
+    <circle cx="36" cy="52" r="5.5" fill="#ff5f57"/>
+    <g class="sheen">
+      <rect x="0" y="1" width="240" height="318" fill="url(#sheen)" transform="skewX(-14)"/>
+    </g>
+    <rect x="0" y="0" width="1000" height="320" fill="url(#scan)"/>
+  </g>
+
+  <!-- radar (security) -->
+  <g>
+    <circle cx="904" cy="84" r="26" fill="none" stroke="#22d3ee" stroke-opacity="0.22"/>
+    <circle cx="904" cy="84" r="14" fill="none" stroke="#22d3ee" stroke-opacity="0.14"/>
+    <line x1="904" y1="84" x2="904" y2="59" stroke="#22d3ee" stroke-width="2" stroke-opacity="0.75" class="sweep"/>
+    <circle cx="916" cy="70" r="2.4" fill="#00ff9c" class="pulse" filter="url(#dotglow)"/>
+    <circle cx="893" cy="95" r="2" fill="#a78bfa" class="pulse" filter="url(#dotglow)"/>
+  </g>
+
+  <!-- title -->
+  <text x="500" y="152" text-anchor="middle" font-size="62" font-weight="700"
+        letter-spacing="8" fill="url(#titleg)" filter="url(#glow)">KRIPTO-GEEK</text>
+  <text x="500" y="184" text-anchor="middle" font-size="14" letter-spacing="3"
+        fill="#64748b">automating workflows · orchestrating containers · breaking weak configs</text>
+
+  <!-- terminal lines (typed) -->
+  <g clip-path="url(#rv1)">
+    <text x="60" y="212" font-size="14"><tspan fill="#00ff9c">$</tspan><tspan fill="#e5e7eb"> whoami → </tspan><tspan fill="#22d3ee">kripto-geek</tspan></text>
+  </g>
+  <g clip-path="url(#rv2)">
+    <text x="60" y="242" font-size="14"><tspan fill="#00ff9c">$</tspan><tspan fill="#e5e7eb"> stack → </tspan><tspan fill="#e5e7eb">docker · kubernetes · terraform · go · python</tspan></text>
+  </g>
+  <g clip-path="url(#rv3)">
+    <text x="60" y="272" font-size="14"><tspan fill="#00ff9c">$</tspan><tspan fill="#e5e7eb"> sudo </tspan><tspan fill="#e5e7eb">--secure </tspan><tspan fill="#a78bfa">--automate</tspan></text>
+    <rect x="536" y="262" width="9" height="17" fill="#00ff9c" class="cursor"/>
+  </g>
+
+  <!-- service chip -->
+  <rect x="60" y="288" width="268" height="24" rx="12" fill="#0b0f14" stroke="#1f2937"/>
+  <circle cx="76" cy="300" r="3.6" fill="#00ff9c" class="pulse"/>
+  <text x="86" y="304" font-size="11" fill="#a1a1aa">infra.service — active (learning)</text>
+
+  <!-- load meter -->
+  <rect x="860" y="290" width="12" height="20" rx="2" fill="#00ff9c" class="b1"/>
+  <rect x="842" y="290" width="12" height="20" rx="2" fill="#00ff9c" class="b2"/>
+  <rect x="824" y="290" width="12" height="20" rx="2" fill="#00ff9c" class="b3"/>
+  <rect x="806" y="290" width="12" height="20" rx="2" fill="#00ff9c" class="b4"/>
+  <rect x="788" y="290" width="12" height="20" rx="2" fill="#00ff9c" class="b5"/>
+  <rect x="770" y="290" width="12" height="20" rx="2" fill="#00ff9c" class="b6"/>
+  <rect x="752" y="290" width="12" height="20" rx="2" fill="#00ff9c" class="b7"/>
+  <rect x="734" y="290" width="12" height="20" rx="2" fill="#00ff9c" class="b8"/>
+</svg>
