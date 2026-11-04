@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="44" viewBox="0 0 1200 44">
+  <rect x="4" y="4" width="1192" height="36" rx="10" fill="#1a1a1a"/>
+  <rect x="60" y="18" width="10" height="8" fill="#f5a524"/>
+  <rect x="1130" y="18" width="10" height="8" fill="#f5a524"/>
+  <text x="600" y="27" text-anchor="middle" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="12" letter-spacing="4" fill="#faf9f6">SCAN COMPLETE · EXIT 0</text>
+</svg>
